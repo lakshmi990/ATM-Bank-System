@@ -2,7 +2,7 @@ accounts = [
     {
         "name" : "Sree" ,
         "pin" : 2301 ,
-        "account_no" : 12344;
+        "account_no" : 12344,
         "balance" : 10000,
         "transactions" : []
     },
@@ -44,15 +44,15 @@ accounts = [
      {
         "name" : "remo" ,
         "pin" : 1480 ,
-        "account_no" : 48320;
+        "account_no" : 48320,
         "balance" : 1400,
         "transactions" : []
     },
      {
         "name" : "nime" ,
         "pin" : 1301 ,
-        "account_no" : 78392;
+        "account_no" : 78392,
         "balance" : 10000,
         "transactions" : []
-    },
+    }
 ]
