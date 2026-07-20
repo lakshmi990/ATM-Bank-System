@@ -1,4 +1,4 @@
-from pin_verification import pinVerification
+from Authentication import Authenticationn
 from create_account import Account
 
 
@@ -14,8 +14,7 @@ while True :
     print(" 6. Exit")
     choice = int (input(" select one option : "))
     if choice == 1 :
-        new_account = Account.create_account()
-        accounts.append(new_account)
+        Account.create_account()
         print("Account created scuccessfully !...")
     elif choice == 2 :
         deposit_money()

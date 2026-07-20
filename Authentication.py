@@ -1,10 +1,17 @@
 from database import accounts
-class pinVerification :
+class Authenticationn :
     @staticmethod
-    def verify_pin(account_no , pin):
+    def verify_pin(accounts ):
         for account in accounts:
-            if account["account_no"] == account_no and account["pin"] == pin :
+            if account.pin == pin :
                 return account
-            else :
-                return None
+            
+        return None
+    @staticmethod
+    def verify_accountNo(accounts):
+        for account in accounts:
+            if account.pin == account_no:
+                return account
+            
+        return None
              

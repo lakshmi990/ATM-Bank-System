@@ -1,4 +1,4 @@
-from Authentication import Authentication
+from Authentication import Authenticationn
 from database import accounts
 class Account:
     def __init__(self , name , pin , account_no , balance ):
@@ -14,11 +14,11 @@ class Account:
         pin = int(input("Enter 4-digits pin : "))
         while True:
             account_no = int(input("Enter account_no : "))
-            verify_obj = Authentication()
+            verify_obj = Authenticationn()
        
-            account_verify = verify_obj.verify_accountNO(account_no)
+            account_verify = verify_obj.verify_accountNo(account_no)
           
-            if  not account_verify :
+            if  account_verify :
                 print("This account already exist!")
                 continue
                 
