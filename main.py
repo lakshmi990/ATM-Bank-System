@@ -1,8 +1,6 @@
 from Authentication import Authenticationn
 from create_account import Account
 
-
-
 while True :
     print("---WELCOME TO YONO SBI---")
     print("International or Local") 
@@ -15,13 +13,10 @@ while True :
     choice = int (input(" select one option : "))
     if choice == 1 :
         Account.create_account()
+        
         print("Account created scuccessfully !...")
     elif choice == 2 :
         deposit_money()
-        pin_obj = pinVerification()
-        account_no = int(input("Enter Account number : "))
-        pin = int ( input ("Enter PIN :"))
-        account = pin_obj.verify(account_no , pin)
         if account : 
             print("Login succesfull")
         else:
