@@ -31,7 +31,7 @@ accounts = [
         "name" : "priya" ,
         "pin" : 9901 ,
         "account_no" : 34589,
-        "balance" : 9000,
+        "balance" : 9000,   
         "transactions" : []
     },
      {
@@ -56,3 +56,13 @@ accounts = [
         "transactions" : []
     }
 ]
+
+def load_accounts(account):
+    from create_account import Account
+    with open("accounts.txt", "a") as f :
+       f.write(
+    f"Name: {account.name}\n"
+    f"PIN: {account.pin}\n"
+    f"Account No: {account.account_no}\n"
+    f"Balance: {account.balance}\n\n"
+)

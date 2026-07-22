@@ -1,6 +1,4 @@
-from Authentication import Authenticationn
 from create_account import Account
-
 while True :
     print("---WELCOME TO YONO SBI---")
     print("International or Local") 
