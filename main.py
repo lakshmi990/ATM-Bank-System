@@ -1,4 +1,5 @@
 from create_account import Account
+from deposit import Deposit
 while True :
     print("---WELCOME TO YONO SBI---")
     print("International or Local") 
@@ -14,7 +15,7 @@ while True :
         
         print("Account created scuccessfully !...")
     elif choice == 2 :
-        deposit_money()
+        Deposit.deposit_money()
         if account : 
             print("Login succesfull")
         else:
